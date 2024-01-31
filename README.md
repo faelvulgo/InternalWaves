@@ -14,4 +14,4 @@ O código consiste de três funções: bruntvaisala, plotvaisala e timecounter
 
 # Exemplo
 Exemplo abaixo da imagem gerada depois de todas as funções serem executadas:
-![Plot da Frequência de Flutuabilidade](![Perfil de dados brutos](https://github.com/faelvulgo/CTDprocessing/blob/master/perfis/Perfil_bruto.png))
+![Plot da Frequência de Flutuabilidade](bruntvaisala.png)
