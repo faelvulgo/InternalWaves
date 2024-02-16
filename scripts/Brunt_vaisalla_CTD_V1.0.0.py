@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import gsw
 
 # cria o dataframe
-data = pd.read_csv('/dados/resultado_binado.csv')
+data = pd.read_csv('PATH')
 
 # calcula salinidade absoluta a partir da salinidade prática (salinidade, pressão, lon, lat)
 sa = gsw.conversions.SA_from_SP(data['salinity'], data['pressure'], data['pressure'], )
