@@ -4,7 +4,7 @@ import gsw
 import time
 
 # cria o dataframe
-data = pd.read_csv('/home/labdino/PycharmProjects/CTDprocessing/dados/01. Dados Brutos/04_radial_3/0656_30072019_2242/FILE57_binado.csv')
+data = pd.read_csv('PATH')
 
 # extrai as colunas do dataframe para um array NumPy
 salinidade = data['Calc. SALINITY; PSU'].values
@@ -42,7 +42,7 @@ def plotvaisala(n2):
     plt.title('Perfil de Frequência de Brunt-Väisälä - 656')
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig('/home/labdino/PycharmProjects/CTDprocessing/dados/01. Dados Brutos/04_radial_3/0656_30072019_2242/bruntvaisala.png', format='png', dpi=900, transparent=False)
+    plt.savefig('PATH', format='png', dpi=900, transparent=False)
 
     plt.show()
 
