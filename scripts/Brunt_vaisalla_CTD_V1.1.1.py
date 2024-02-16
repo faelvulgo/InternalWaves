@@ -4,7 +4,7 @@ import gsw
 import time
 
 # cria o dataframe
-data = pd.read_csv('/home/labdino/PycharmProjects/CTDprocessing/dados/01. Dados Brutos/02_radial_LADCP/0635_29072019_2033/FILE15_binado.csv')
+data = pd.read_csv('PATH')
 
 # extrai as colunas do dataframe para um array NumPy
 salinidade = data['Calc. SALINITY; PSU'].values
@@ -25,7 +25,7 @@ def bruntvaisala():
 
     # como n2 é uma tupla, n2[0] é a frequência e n2[1] é a pressão, tramsforma em um dataframe do pandas de novo e salva em csv
     n2_df = pd.DataFrame({'Brunt-Väisälä Frequency': n2[0], 'Mid-Pressure': n2[1]})
-    n2_df.to_csv('/home/labdino/PycharmProjects/CTDprocessing/dados/01. Dados Brutos/02_radial_LADCP/0635_29072019_2033/bruntvaisala.csv', index=False)
+    n2_df.to_csv('PATH', index=False)
 
     return n2
 
@@ -39,7 +39,7 @@ def plotvaisala(n2):
     plt.ylabel('Frequência de Brunt-Väisälä (N^2)')
     plt.title('Perfil de Frequência de Brunt-Väisälä - 635')
     plt.grid(True)
-    plt.savefig('/home/labdino/PycharmProjects/CTDprocessing/dados/01. Dados Brutos/02_radial_LADCP/0635_29072019_2033/bruntvaisala.png', format='png', dpi=900, transparent=False)
+    plt.savefig('PATH', format='png', dpi=900, transparent=False)
 
     plt.show()
 
